@@ -1,9 +1,9 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
-class Command : public CmdInterpreter {
+class Command {
 public:
-  void execute();
+  virtual void execute() = 0;
 };
 
 #endif

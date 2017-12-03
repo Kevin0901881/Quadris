@@ -2,8 +2,10 @@
 #define LEFT_H
 
 class Left : public Command {
+  Board* board;
 public:
-  void execute();
+  Left(Board* b); // constructor
+  void execute(); // executes the left command
 };
 
 #endif
